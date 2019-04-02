@@ -1,0 +1,31 @@
+
+{
+  "name": "nodebb-widget-ranking",
+  "version": "0.1.0",
+  "description": "NodeBB Essential Widgets",
+  "main": "library.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fralonra/nodebb-widget-ranking"
+  },
+  "keywords": [
+    "nodebb",
+    "widget",
+    "ranking"
+  ],
+  "author": "zoron (https://github.com/fralonra/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fralonra/nodebb-widget-ranking/issues"
+  },
+  "readme": "",
+  "readmeFilename": "README.md",
+  "_id": "nodebb-widget-ranking@0.0.1",
+  "_from": "nodebb-widget-ranking@~0.0.1",
+  "nbbpm": {
+    "compatibility": "^1.12.0"
+  }
+}

@@ -1,0 +1,22 @@
+{
+	"id": "nodebb-widget-ranking",
+	"name": "NodeBB User Ranking Widget",
+	"description": "A NodeBB widget to display user ranking",
+	"url": "https://github.com/fralonra/nodebb-widget-ranking",
+	"library": "./library.js",
+	"hooks": [
+    {
+			"hook": "static:app.load", "method": "init"
+		},
+    {
+			"hook": "filter:widgets.getWidgets", "method": "defineWidgets"
+		},
+		{
+			"hook": "filter:widget.render:ranking", "method": "renderWidget"
+		}
+	],
+	"less": [
+    "public/less/widget.less"
+	],
+  "templates": "public/templates"
+}
