@@ -1,9 +1,9 @@
 'use strict';
 
-var async = module.parent.require('async');
-var nconf = module.parent.require('nconf');
+var async = require.main.require('async');
+var nconf = require.main.require('nconf');
 
-var user = module.parent.require('./src/user');
+var user = require.main.require('./src/user');
 
 var app;
 
@@ -11,7 +11,6 @@ var Widget = module.exports;
 
 Widget.init = function (params, callback) {
 	app = params.app;
-
 	callback();
 };
 
@@ -34,7 +33,7 @@ Widget.renderWidget = function (widget, callback) {
 			return next(null, userData);
 		},
 		function (userData, next) {
-			widget.req.app.render('widgets/userranking', {
+			app.render('widgets/userranking', {
 				users: userData,
 				relative_path: nconf.get('relative_path'),
 			}, next);
@@ -53,7 +52,7 @@ Widget.defineWidgets = function (widgets, callback) {
 		},
 		function (html, next) {
 			widgets.push({
-				widget: 'userranking',
+	  		widget: 'userranking',
 				name: 'Users Ranking',
 				description: 'List of user ranking',
 				content: html,

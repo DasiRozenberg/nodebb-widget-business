@@ -18,5 +18,5 @@
 	"less": [
     "public/less/widget.less"
 	],
-  "templates": "public/templates"
+  "templates": "./public/templates"
 }
