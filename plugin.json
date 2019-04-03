@@ -12,7 +12,7 @@
 			"hook": "filter:widgets.getWidgets", "method": "defineWidgets"
 		},
 		{
-			"hook": "filter:widget.render:ranking", "method": "renderWidget"
+			"hook": "filter:widget.render:userranking", "method": "renderWidget"
 		}
 	],
 	"less": [

@@ -1,8 +1,8 @@
 
 {
   "name": "nodebb-widget-ranking",
-  "version": "0.1.0",
-  "description": "NodeBB Essential Widgets",
+  "version": "0.1.1",
+  "description": "NodeBB User Ranking Widget",
   "main": "library.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
